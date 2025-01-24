@@ -4,18 +4,19 @@ import { auth } from "./firebaseconfig.js";
 const loginbtn = document.querySelector("#loginbtn")
 const logoutbtn = document.querySelector("#logoutbtn")
 
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    console.log(uid);
+    
+  } else {
+    window.location = "./login.html"
+    
+  }
+});
+
 loginbtn.addEventListener("click" , ()=>{
     window.location = "./login.html"
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-          const uid = user.uid;
-          console.log(uid);
-          
-        } else {
-          console.log("User login nahi hai");
-          
-        }
-      });
 })
 
 
