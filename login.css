@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(80deg, #9f50f5, #2bb5e3 , #b925e1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+.login-head{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 55%;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+}
+#email{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 3px #888888;
+    outline: none;
+}
+#password{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 3px #888888;
+    outline: none;
+}
+#btn{
+    width: 100%;
+    margin-top: 10px;
+    background: linear-gradient(80deg, #9f50f5, #2bb5e3 , #b925e1);
+    border: none;
+    padding: 8px 5px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#googlebtn{
+    width: 100%;
+    margin-top: 10px;
+    background: linear-gradient(60deg, #969191 , #000000) ;
+    border: none;
+    padding: 8px 5px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.label{
+    margin: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.anchor{
+    color: black;
+}
+
+@media (max-width: 780px){
+    .form-container{
+        width: 90%;
+    }
+}

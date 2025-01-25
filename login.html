@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-    <h1>Hello Login</h1>
-    <form id="form">
-        <input type="email" placeholder="Enter your email" id="email"> <br><br>
-        <input type="password" placeholder="Enter your password" id="password"><br><br>
-        <button type="submit" id="btn">login</button> <br> <br>
-    </form>
-    <button id="googlebtn">login with google</button> <br><br>
-    <a href="./register.html">Not a user?</a>
+    <h1 class="login-head">Login</h1>
+    <div class="form-container">
+        <form id="form">
+            <span><i class="fa-solid fa-user"></i></span>
+            <label class="label">Email</label>
+            <input type="email" placeholder="Enter your email" id="email"> <br><br>
+            <span><i class="fa-solid fa-lock"></i></span>
+            <label class="label">password</label>
+            <input type="password" placeholder="Enter your password" id="password"><br><br>
+            <p class="para"></p>
+            <button type="submit" id="btn">LOGIN</button> <br> <br>
+            <button id="googlebtn"><span><i class="fa-brands fa-google"></i></span></button> <br><br>
+            <a class="anchor" href="./register.html">Not a user?</a>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/765e78c1a9.js" crossorigin="anonymous"></script>
     <script type="module" src="./login.js"></script>
 </body>
 </html>
